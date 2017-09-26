@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformingPrototype", "PlatformingPrototype.csproj", "{E7FA6308-E2F6-94FC-60E2-F7DAC98F683E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7FA6308-E2F6-94FC-60E2-F7DAC98F683E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7FA6308-E2F6-94FC-60E2-F7DAC98F683E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7FA6308-E2F6-94FC-60E2-F7DAC98F683E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7FA6308-E2F6-94FC-60E2-F7DAC98F683E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

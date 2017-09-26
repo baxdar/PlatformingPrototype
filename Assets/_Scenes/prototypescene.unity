@@ -1145,6 +1145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1148246543}
   - component: {fileID: 1148246542}
+  - component: {fileID: 1148246544}
   m_Layer: 0
   m_Name: BadShoot
   m_TagString: Untagged
@@ -1207,6 +1208,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1148246544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1148246541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246e310e0b76c264b99731b769dc47f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  lastTimer: 0
 --- !u!1 &1399124357
 GameObject:
   m_ObjectHideFlags: 0
@@ -2204,6 +2218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1800118854}
   - component: {fileID: 1800118853}
+  - component: {fileID: 1800118855}
   m_Layer: 0
   m_Name: BadSwipe
   m_TagString: Untagged
@@ -2266,6 +2281,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1800118855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1800118852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e5fee5f4fede304283a7a59371a4dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  fadetimer: 0
 --- !u!1 &1832228296
 GameObject:
   m_ObjectHideFlags: 0

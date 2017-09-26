@@ -78,11 +78,19 @@ public class _CharacterController : MonoBehaviour {
     private int energy;
     private Vector2 movement;
     private bool tryJump = false;
-    private bool tryMelee = false;
-    private bool tryranged = false;
+    private bool atkCooldown = false;
 
     private IEnumerator attackCooldown() {
         yield return new WaitForSeconds(.5f);
+        atkCooldown = false;
+    }
+
+    private void meleeAttack() {
+
+    } 
+
+    private void rangedAttack() {
+
     }
 
     private bool isGrounded() {
@@ -120,11 +128,15 @@ public class _CharacterController : MonoBehaviour {
             if (isGrounded())
                 energy -= charStats.jumpheight.CurrentStat;
         }
-        if (Input.GetButton("Fire1")) {
+        if (Input.GetButton("Fire1") && !atkCooldown) {
+            atkCooldown = true;
+            StartCoroutine(attackCooldown());
 
             energy -= charStats.meleeatkstr.CurrentStat;
         }
-        if (Input.GetButton("Fire2")) {
+        if (Input.GetButton("Fire2") && !atkCooldown) {
+            atkCooldown = true;
+            StartCoroutine(attackCooldown());
 
             energy -= (charStats.rangedatkstr.CurrentStat + 3);
         }
@@ -144,7 +156,6 @@ public class _CharacterController : MonoBehaviour {
     }
 
     void FixedUpdate () {//all movement goes here
-        
         charRigidBody.velocity = movement;
 	}
 
