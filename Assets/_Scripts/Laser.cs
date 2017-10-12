@@ -3,18 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Laser : MonoBehaviour {
-
-    SpriteRenderer spriterenderer;
     public int damage;
     public float lastTimer;
 
     void Start() {
-        spriterenderer = GetComponent<SpriteRenderer>();
         Destroy(gameObject, lastTimer);
     }
 
-    private void OnCollisionEnter(Collision collision) {
-        if (collision.collider.tag == "Platforms")
-        Destroy(gameObject);
+    private void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.layer == 8)
+            Destroy(gameObject);
     }
 }
